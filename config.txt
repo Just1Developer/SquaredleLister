@@ -1,0 +1,5 @@
+min word length=4
+max word length=10
+type=yes
+start delay=5000
+type delay=200
