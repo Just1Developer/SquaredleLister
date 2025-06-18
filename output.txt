@@ -15,440 +15,820 @@ Finished finding words of length: 10
 
 -------------------------------------
 
-[2025-06-17T06:51:11.508798] All Squaredle Words. Map:
- o a c s
+[2025-06-17T12:25:35.505455] All Squaredle Words. Map:
+ f a i s h
 
- o d h h
+ o ä l ä e
 
- l w o u
+ t o l u r
 
- b f n d
+ i ä y ä b
+
+ i d u m p
 
 
-Found 46 words
+Found 72 words
 .
 Words of length: 4
-blow
- o o o o
+ails
+ o 1 2 4 o
 
- 3 o o o
+ o o 3 o o
 
- 2 4 o o
+ o o o o o
 
- 1 o o o
+ o o o o o
 
-chad
- o 3 1 o
+ o o o o o
 
- o 4 2 o
+ally
+ o 1 o o o
 
- o o o o
+ o o 2 o o
 
- o o o o
+ o o 3 o o
 
-chao
- 4 3 1 o
+ o o 4 o o
 
- o o 2 o
+ o o o o o
 
- o o o o
+bull
+ o o o o o
 
- o o o o
+ o o 3 o o
 
-chon
- o o 1 o
+ o o 4 2 o
 
- o o 2 o
+ o o o o 1
 
- o o 3 o
+ o o o o o
 
- o o 4 o
+diol
+ o o o o o
 
-chow
- o o 1 o
+ o o 4 o o
 
- o o 2 o
+ o 3 o o o
 
- o 4 3 o
+ 2 o o o o
 
- o o o o
+ o 1 o o o
 
-dahs
- o 2 o 4
+dumb
+ o o o o o
 
- o 1 3 o
+ o o o o o
 
- o o o o
+ o o o o o
 
- o o o o
+ o o o o 4
 
-dhow
- o o o o
+ o 1 2 3 o
 
- o 1 2 o
+dump
+ o o o o o
 
- o 4 3 o
+ o o o o o
 
- o o o o
+ o o o o o
 
-dodo
- 4 o o o
+ o o o o o
 
- o 3 o o
+ o 1 2 3 4
 
- o o 2 o
+fail
+ 1 2 3 o o
 
- o o o 1
+ o o 4 o o
 
-down
- o o o o
+ o o o o o
 
- o 1 o o
+ o o o o o
 
- o 3 2 o
+ o o o o o
 
- o o 4 o
+fall
+ 1 2 o o o
 
-flow
- o o o o
+ o o 3 o o
 
- 3 o o o
+ o o 4 o o
 
- 2 4 o o
+ o o o o o
 
- o 1 o o
+ o o o o o
 
-fond
- o o o o
+foal
+ 1 3 o o o
 
- o o o o
+ 2 o 4 o o
 
- o o 2 o
+ o o o o o
 
- o 1 3 4
+ o o o o o
 
-fowl
- o o o o
+ o o o o o
 
- o o o o
+fool
+ 1 o o o o
 
- 4 3 2 o
+ 2 o 4 o o
 
- o 1 o o
+ o 3 o o o
 
-howf
- o o o o
+ o o o o o
 
- o o 1 o
+ o o o o o
 
- o 3 2 o
+foot
+ 1 o o o o
 
- o 4 o o
+ 2 o o o o
 
-howl
- o o o o
+ 4 3 o o o
 
- o o 1 o
+ o o o o o
 
- 4 3 2 o
+ o o o o o
 
- o o o o
+herb
+ o o o o 1
 
-load
- o 3 o o
+ o o o o 2
 
- 2 4 o o
+ o o o o 3
 
- 1 o o o
+ o o o o 4
 
- o o o o
+ o o o o o
 
-lown
- o o o o
+idyl
+ o o o o o
 
- 2 o o o
+ o o o o o
 
- 1 3 o o
+ o o 4 o o
 
- o o 4 o
+ 1 o 3 o o
 
-odah
- 1 3 o o
+ o 2 o o o
 
- o 2 4 o
+illy
+ o o 1 o o
 
- o o o o
+ o o 2 o o
 
- o o o o
+ o o 3 o o
 
-scad
- o 3 2 1
+ o o 4 o o
 
- o 4 o o
+ o o o o o
 
- o o o o
+loid
+ o o o o o
 
- o o o o
+ o o 1 o o
 
-shad
- o 3 o 1
+ o 2 o o o
 
- o 4 2 o
+ 3 o o o o
 
- o o o o
+ o 4 o o o
 
- o o o o
+loof
+ 4 o o o o
 
-shod
- o o o 1
+ 3 o 1 o o
 
- o 4 2 o
+ o 2 o o o
 
- o o 3 o
+ o o o o o
 
- o o o o
+ o o o o o
 
-show
- o o o 1
+loot
+ o o o o o
 
- o o 2 o
+ 3 o 1 o o
 
- o 4 3 o
+ 4 2 o o o
 
- o o o o
+ o o o o o
 
-shun
- o o o 1
+ o o o o o
 
- o o 2 o
+loti
+ o o o o o
 
- o o o 3
+ o o 1 o o
 
- o o 4 o
+ 3 2 o o o
 
-udon
- o o o o
+ 4 o o o o
 
- o o o o
+ o o o o o
 
- o o 3 1
+lues
+ o o o 4 o
 
- o o 4 2
+ o o 1 o 3
 
-undo
- o o o o
+ o o o 2 o
 
- o o o o
+ o o o o o
 
- o o 4 1
+ o o o o o
 
- o o 2 3
+lure
+ o o o o o
 
-woad
- o 3 o o
+ o o 1 o 4
 
- 2 4 o o
+ o o o 2 3
 
- o 1 o o
+ o o o o o
 
- o o o o
+ o o o o o
 
-wold
- o o o o
+olla
+ o 4 o o o
 
- 2 4 o o
+ o o 3 o o
 
- 3 1 o o
+ o 1 2 o o
 
- o o o o
+ o o o o o
 
-wolf
- o o o o
+ o o o o o
 
- 2 o o o
+resh
+ o o o 3 4
 
- 3 1 o o
+ o o o o 2
 
- o 4 o o
+ o o o o 1
 
-wood
- 3 o o o
+ o o o o o
 
- 2 4 o o
+ o o o o o
 
- o 1 o o
+rues
+ o o o 4 o
 
- o o o o
+ o o o o 3
+
+ o o o 2 1
+
+ o o o o o
+
+ o o o o o
+
+ruly
+ o o o o o
+
+ o o o o o
+
+ o o 3 2 1
+
+ o o 4 o o
+
+ o o o o o
+
+sial
+ o 3 2 1 o
+
+ o o 4 o o
+
+ o o o o o
+
+ o o o o o
+
+ o o o o o
+
+sill
+ o o 2 1 o
+
+ o o 3 o o
+
+ o o 4 o o
+
+ o o o o o
+
+ o o o o o
+
+silo
+ o o 2 1 o
+
+ o o 3 o o
+
+ o 4 o o o
+
+ o o o o o
+
+ o o o o o
+
+slot
+ o o o 1 o
+
+ o o 2 o o
+
+ 4 3 o o o
+
+ o o o o o
+
+ o o o o o
+
+slub
+ o o o 1 o
+
+ o o 2 o o
+
+ o o o 3 o
+
+ o o o o 4
+
+ o o o o o
+
+slue
+ o o o 1 o
+
+ o o 2 o 4
+
+ o o o 3 o
+
+ o o o o o
+
+ o o o o o
+
+slur
+ o o o 1 o
+
+ o o 2 o o
+
+ o o o 3 4
+
+ o o o o o
+
+ o o o o o
+
+tidy
+ o o o o o
+
+ o o o o o
+
+ 1 o o o o
+
+ 2 o 4 o o
+
+ o 3 o o o
+
+tola
+ o 4 o o o
+
+ o o 3 o o
+
+ 1 2 o o o
+
+ o o o o o
+
+ o o o o o
+
+toll
+ o o o o o
+
+ o o 3 o o
+
+ 1 2 4 o o
+
+ o o o o o
+
+ o o o o o
+
+tolu
+ o o o o o
+
+ o o 3 o o
+
+ 1 2 o 4 o
+
+ o o o o o
+
+ o o o o o
+
+tool
+ o o o o o
+
+ 2 o 4 o o
+
+ 1 3 o o o
+
+ o o o o o
+
+ o o o o o
 
 
 Words of length: 5
-adown
- o 1 o o
+afoot
+ 2 1 o o o
 
- o 2 o o
+ 3 o o o o
 
- o 4 3 o
+ 5 4 o o o
 
- o o 5 o
+ o o o o o
 
-blood
- 4 o o o
+ o o o o o
 
- 3 5 o o
+allot
+ o 1 o o o
 
- 2 o o o
+ o o 2 o o
 
- 1 o o o
+ 5 4 3 o o
 
-blown
- o o o o
+ o o o o o
 
- 3 o o o
+ o o o o o
 
- 2 4 o o
+alloy
+ o 1 o o o
 
- 1 o 5 o
+ o o 2 o o
 
-cahow
- o 2 1 o
+ o 4 3 o o
 
- o o 3 o
+ o o 5 o o
 
- o 5 4 o
+ o o o o o
 
- o o o o
+aloof
+ 5 1 o o o
 
-flood
- 4 o o o
+ 4 o 2 o o
 
- 3 5 o o
+ o 3 o o o
 
- 2 o o o
+ o o o o o
 
- o 1 o o
+ o o o o o
 
-flown
- o o o o
+bulla
+ o 5 o o o
 
- 3 o o o
+ o o 4 o o
 
- 2 4 o o
+ o o 3 2 o
 
- o 1 5 o
+ o o o o 1
 
-fondu
- o o o o
+ o o o o o
 
- o o o o
+bulls
+ o o o 5 o
 
- o o 2 5
+ o o 4 o o
 
- o 1 3 4
+ o o 3 2 o
 
-found
- o o o o
+ o o o o 1
 
- o o o o
+ o o o o o
 
- o o 2 3
+bully
+ o o o o o
 
- o 1 4 5
+ o o 3 o o
 
-hound
- o o o o
+ o o 4 2 o
 
- o o 1 o
+ o o 5 o 1
 
- o o 2 3
+ o o o o o
 
- o o 4 5
+diols
+ o o o 5 o
 
-loach
- o 3 4 o
+ o o 4 o o
 
- 2 o 5 o
+ o 3 o o o
 
- 1 o o o
+ 2 o o o o
 
- o o o o
+ o 1 o o o
 
-odahs
- 1 3 o 5
+fails
+ 1 2 3 5 o
 
- o 2 4 o
+ o o 4 o o
 
- o o o o
+ o o o o o
 
- o o o o
+ o o o o o
 
-shown
- o o o 1
+ o o o o o
 
- o o 2 o
+false
+ 1 2 o 4 o
 
- o 4 3 o
+ o o 3 o 5
 
- o o 5 o
+ o o o o o
 
-wound
- o o o o
+ o o o o o
 
- o o o o
+ o o o o o
 
- o 1 2 3
+foals
+ 1 3 o 5 o
 
- o o 4 5
+ 2 o 4 o o
+
+ o o o o o
+
+ o o o o o
+
+ o o o o o
+
+fools
+ 1 o o 5 o
+
+ 2 o 4 o o
+
+ o 3 o o o
+
+ o o o o o
+
+ o o o o o
+
+idiot
+ o o o o o
+
+ o o o o o
+
+ 5 4 o o o
+
+ 3 o o o o
+
+ 1 2 o o o
+
+idyll
+ o o o o o
+
+ o o 5 o o
+
+ o o 4 o o
+
+ 1 o 3 o o
+
+ o 2 o o o
+
+loofa
+ 4 5 o o o
+
+ 3 o 1 o o
+
+ o 2 o o o
+
+ o o o o o
+
+ o o o o o
+
+lures
+ o o o 5 o
+
+ o o 1 o 4
+
+ o o o 2 3
+
+ o o o o o
+
+ o o o o o
+
+myoid
+ o o o o o
+
+ o o o o o
+
+ o 3 o o o
+
+ 4 o 2 o o
+
+ o 5 o 1 o
+
+ootid
+ o o o o o
+
+ 1 o o o o
+
+ 3 2 o o o
+
+ 4 o o o o
+
+ o 5 o o o
+
+silly
+ o o 2 1 o
+
+ o o 3 o o
+
+ o o 4 o o
+
+ o o 5 o o
+
+ o o o o o
+
+sloid
+ o o o 1 o
+
+ o o 2 o o
+
+ o 3 o o o
+
+ 4 o o o o
+
+ o 5 o o o
+
+sloyd
+ o o o 1 o
+
+ o o 2 o o
+
+ o 3 o o o
+
+ o o 4 o o
+
+ o 5 o o o
+
+slurb
+ o o o 1 o
+
+ o o 2 o o
+
+ o o o 3 4
+
+ o o o o 5
+
+ o o o o o
+
+tolls
+ o o o 5 o
+
+ o o 4 o o
+
+ 1 2 3 o o
+
+ o o o o o
+
+ o o o o o
+
+tools
+ o o o 5 o
+
+ 2 o 4 o o
+
+ 1 3 o o o
+
+ o o o o o
+
+ o o o o o
 
 
 Words of length: 6
-howdah
- o 5 o o
+allure
+ o 1 o o o
 
- o 4 6 1
+ o o 2 o 6
 
- o 3 2 o
+ o o 3 4 5
 
- o o o o
+ o o o o o
 
-shadow
- o 3 o 1
+ o o o o o
 
- o 4 2 o
+brulot
+ o o o o o
 
- o 6 5 o
+ o o 4 o o
 
- o o o o
+ 6 5 o 3 2
+
+ o o o o 1
+
+ o o o o o
+
+falser
+ 1 2 o 4 o
+
+ o o 3 o 5
+
+ o o o o 6
+
+ o o o o o
+
+ o o o o o
+
+idylls
+ o o o 6 o
+
+ o o 5 o o
+
+ o o 4 o o
+
+ 1 o 3 o o
+
+ o 2 o o o
+
+toluyl
+ o o o o o
+
+ o o 3 o o
+
+ 1 2 6 4 o
+
+ o o 5 o o
+
+ o o o o o
 
 
 Words of length: 7
-howdahs
- o 5 o 7
+allures
+ o 1 o 7 o
 
- o 4 6 1
+ o o 2 o 6
 
- o 3 2 o
+ o o 3 4 5
 
- o o o o
+ o o o o o
+
+ o o o o o
+
+bullish
+ o o 5 6 7
+
+ o o 4 o o
+
+ o o 3 2 o
+
+ o o o o 1
+
+ o o o o o
+
+failure
+ 1 2 3 o o
+
+ o o 4 o 7
+
+ o o o 5 6
+
+ o o o o o
+
+ o o o o o
+
+foolish
+ 1 o 5 6 7
+
+ 2 o 4 o o
+
+ o 3 o o o
+
+ o o o o o
+
+ o o o o o
+
+sialoid
+ o 3 2 1 o
+
+ o o 4 o o
+
+ o 5 o o o
+
+ 6 o o o o
+
+ o 7 o o o
+
+
+Words of length: 8
+failures
+ 1 2 3 8 o
+
+ o o 4 o 7
+
+ o o o 5 6
+
+ o o o o o
+
+ o o o o o
 
 
 Words of length: 9
-dachshund
- o 2 3 5
+foolisher
+ 1 o 5 6 7
 
- o 1 4 6
+ 2 o 4 o 8
 
- o o o 7
+ o 3 o o 9
 
- o o 8 9
+ o o o o o
 
-
-Words of length: 10
-bloodhound
- 4 o o o
-
- 3 5 6 o
-
- 2 o 7 8
-
- 1 o 9 a
+ o o o o o
 

@@ -68,6 +68,8 @@ public class SquaredleTipper {
     }
 
     private int getKeyFromLetter(char c) {
+        if (Character.toLowerCase(c) == 'z') return KeyEvent.VK_Y;
+        if (Character.toLowerCase(c) == 'y') return KeyEvent.VK_Z;
         return KeyEvent.VK_A + Character.toLowerCase(c) - 'a';
     }
 }
