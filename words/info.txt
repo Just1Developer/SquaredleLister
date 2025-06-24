@@ -1,0 +1,3 @@
+origins:
+    wordlist: ?
+    advanced wordlist: https://github.com/dwyl/english-words/blob/master/words.txt

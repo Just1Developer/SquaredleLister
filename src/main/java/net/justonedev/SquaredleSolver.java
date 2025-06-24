@@ -26,16 +26,23 @@ public final class SquaredleSolver {
     private final char[][] squaredle;
     private int minWordLength = 4;
     private int maxWordLength = 8;
+    private final String bonusOfTheDay;
+    @SuppressWarnings("all")    // todo later
+    private final boolean typeKnownBonusWords;
+    private final boolean useAdvancedWordList;
     private Coordinate[][] coordinateObjCache;
     private Map<Coordinate, Set<Coordinate>> coordinateNeighborCache;
 
     private final Set<String> wordList;
 
-    public SquaredleSolver(Set<String> wordListRef, char[][] squaredleRef, int minWordLength, int maxWordLength) {
+    public SquaredleSolver(Set<String> wordListRef, char[][] squaredleRef, int minWordLength, int maxWordLength, String bonusOfTheDay, boolean typeKnownBonusWords, boolean useAdvancedWordList) {
         this.wordList = wordListRef;
         this.squaredle = squaredleRef;
         this.minWordLength = minWordLength;
         this.maxWordLength = maxWordLength;
+        this.bonusOfTheDay = bonusOfTheDay;
+        this.typeKnownBonusWords = typeKnownBonusWords;
+        this.useAdvancedWordList = useAdvancedWordList;
     }
 
     public Queue<Word> solveWordleToFile() {
@@ -62,10 +69,13 @@ public final class SquaredleSolver {
         printf("%n-------------------------------------%n%n");
         printf("[%s] All Squaredle Words. Map:%n", DateTimeFormatter.ISO_LOCAL_DATE_TIME.format(LocalDateTime.now()));
         printMap(squaredle);
-        printf("%nFound %d words%n.", words.size());
+        printf("Using %s word list.%n", useAdvancedWordList ? "advanced" : "regular");
+        printf("%nFound %d words.%n", words.size());
         while (!words.isEmpty()) {
             var found = words.poll();
-            wordList.offer(found);
+            if (!found.word.equals(bonusOfTheDay)) {
+                wordList.offer(found);
+            }
             var word = found.word;
             var path = found.path;
             if (word.length() > currentLength) {

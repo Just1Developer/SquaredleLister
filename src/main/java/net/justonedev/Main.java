@@ -35,16 +35,23 @@ public final class Main {
     private static boolean shouldType = DEFAULT_SHOULD_TYPE;
     private static int startDelay;
     private static int typeDelay;
+    private static String bonusWordOfTheDay;
+    private static boolean typeKnownBonusWords;
+    private static boolean useAdvancedWordList;
 
     private static final Pattern parseableNumberRegex = Pattern.compile("\\d{1,5}");
+    private static final String BOOLEAN_REGEX = "true|y(es)?";
+
+    private static final String regularWordlistFile = "words/wordlist.txt";
+    private static final String largeWordlistFile = "words/wordlist_large.txt";
 
     private Main() {}
 
     public static void main(String[] args) {
         readConfig();
-        Set<String> wordList = new HashSet<>(readFile("wordlist.txt"));
+        Set<String> wordList = new HashSet<>(readFile(useAdvancedWordList ? largeWordlistFile : regularWordlistFile));
         char[][] squaredle = readFile("squaredle.txt").stream().map(String::toCharArray).toArray(char[][]::new);
-        SquaredleSolver solver = new SquaredleSolver(wordList, squaredle, minWordLength, maxWordLength);
+        SquaredleSolver solver = new SquaredleSolver(wordList, squaredle, minWordLength, maxWordLength, bonusWordOfTheDay, typeKnownBonusWords, useAdvancedWordList);
         var words = solver.solveWordleToFile();
         if (shouldType) {
             SquaredleTipper tipper = new SquaredleTipper(words);
@@ -87,6 +94,16 @@ public final class Main {
                     } else {
                         startDelay = DEFAULT_START_DELAY;
                     }
+                }
+            } else if (key.contains("bonus")) {
+                if (key.contains("day")) {
+                    bonusWordOfTheDay = value;
+                } else {
+                    typeKnownBonusWords = value.matches(BOOLEAN_REGEX);
+                }
+            } else if (key.contains("use")) {
+                if (key.contains("advanced") && (key.contains("words") || key.contains("list"))) {
+                    useAdvancedWordList = value.matches(BOOLEAN_REGEX);
                 }
             }
         }

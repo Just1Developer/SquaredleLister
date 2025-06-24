@@ -12,823 +12,932 @@ Begin finding words of length: 9
 Finished finding words of length: 9
 Begin finding words of length: 10
 Finished finding words of length: 10
+Begin finding words of length: 11
+Finished finding words of length: 11
+Begin finding words of length: 12
+Finished finding words of length: 12
+Begin finding words of length: 13
+Finished finding words of length: 13
+Begin finding words of length: 14
+Finished finding words of length: 14
+Begin finding words of length: 15
+Finished finding words of length: 15
+Begin finding words of length: 16
+Finished finding words of length: 16
 
 -------------------------------------
 
-[2025-06-17T12:25:35.505455] All Squaredle Words. Map:
- f a i s h
+[2025-06-24T12:45:16.00437] All Squaredle Words. Map:
+ b t e
 
- o ä l ä e
+ a l i
 
- t o l u r
+ d o v
 
- i ä y ä b
+Using advanced word list.
 
- i d u m p
+Found 128 words.
 
-
-Found 72 words
-.
 Words of length: 4
-ails
- o 1 2 4 o
+able
+ 2 o 4
 
- o o 3 o o
+ 1 3 o
 
- o o o o o
+ o o o
 
- o o o o o
+aldo
+ o o o
 
- o o o o o
+ 1 2 o
 
-ally
- o 1 o o o
+ 3 4 o
 
- o o 2 o o
+alie
+ o o 4
 
- o o 3 o o
+ 1 2 3
 
- o o 4 o o
+ o o o
 
- o o o o o
+alit
+ o 4 o
 
-bull
- o o o o o
+ 1 2 3
 
- o o 3 o o
+ o o o
 
- o o 4 2 o
+alod
+ o o o
 
- o o o o 1
+ 1 2 o
 
- o o o o o
+ 4 3 o
 
-diol
- o o o o o
+alvo
+ o o o
 
- o o 4 o o
+ 1 2 o
 
- o 3 o o o
+ o 4 3
 
- 2 o o o o
+aoli
+ o o o
 
- o 1 o o o
+ 1 3 4
 
-dumb
- o o o o o
+ o 2 o
 
- o o o o o
+atle
+ o 2 4
 
- o o o o o
+ 1 3 o
 
- o o o o 4
+ o o o
 
- o 1 2 3 o
+atli
+ o 2 o
 
-dump
- o o o o o
+ 1 3 4
 
- o o o o o
+ o o o
 
- o o o o o
+bald
+ 1 o o
 
- o o o o o
+ 2 3 o
 
- o 1 2 3 4
+ 4 o o
 
-fail
- 1 2 3 o o
+bale
+ 1 o 4
 
- o o 4 o o
+ 2 3 o
 
- o o o o o
+ o o o
 
- o o o o o
+bali
+ 1 o o
 
- o o o o o
+ 2 3 4
 
-fall
- 1 2 o o o
+ o o o
 
- o o 3 o o
+balt
+ 1 4 o
 
- o o 4 o o
+ 2 3 o
 
- o o o o o
+ o o o
 
- o o o o o
+bate
+ 1 3 4
 
-foal
- 1 3 o o o
+ 2 o o
 
- 2 o 4 o o
+ o o o
 
- o o o o o
+blad
+ 1 o o
 
- o o o o o
+ 3 2 o
 
- o o o o o
+ 4 o o
 
-fool
- 1 o o o o
+blat
+ 1 4 o
 
- 2 o 4 o o
+ 3 2 o
 
- o 3 o o o
+ o o o
 
- o o o o o
+blet
+ 1 4 3
 
- o o o o o
+ o 2 o
 
-foot
- 1 o o o o
+ o o o
 
- 2 o o o o
+blit
+ 1 4 o
 
- 4 3 o o o
+ o 2 3
 
- o o o o o
+ o o o
 
- o o o o o
+dale
+ o o 4
 
-herb
- o o o o 1
+ 2 3 o
 
- o o o o 2
+ 1 o o
 
- o o o o 3
+dali
+ o o o
 
- o o o o 4
+ 2 3 4
 
- o o o o o
+ 1 o o
 
-idyl
- o o o o o
+dalt
+ o 4 o
 
- o o o o o
+ 2 3 o
 
- o o 4 o o
+ 1 o o
 
- 1 o 3 o o
+date
+ o 3 4
 
- o 2 o o o
+ 2 o o
 
-illy
- o o 1 o o
+ 1 o o
 
- o o 2 o o
+doab
+ 4 o o
 
- o o 3 o o
+ 3 o o
 
- o o 4 o o
+ 1 2 o
 
- o o o o o
+doat
+ o 4 o
 
-loid
- o o o o o
+ 3 o o
 
- o o 1 o o
+ 1 2 o
 
- o 2 o o o
+doit
+ o 4 o
 
- 3 o o o o
+ o o 3
 
- o 4 o o o
+ 1 2 o
 
-loof
- 4 o o o o
+dola
+ o o o
 
- 3 o 1 o o
+ 4 3 o
 
- o 2 o o o
+ 1 2 o
 
- o o o o o
+dole
+ o o 4
 
- o o o o o
+ o 3 o
 
-loot
- o o o o o
+ 1 2 o
 
- 3 o 1 o o
+doli
+ o o o
 
- 4 2 o o o
+ o 3 4
 
- o o o o o
+ 1 2 o
 
- o o o o o
+dolt
+ o 4 o
 
-loti
- o o o o o
+ o 3 o
 
- o o 1 o o
+ 1 2 o
 
- 3 2 o o o
+eila
+ o o 1
 
- 4 o o o o
+ 4 3 2
 
- o o o o o
+ o o o
 
-lues
- o o o 4 o
+eild
+ o o 1
 
- o o 1 o 3
+ o 3 2
 
- o o o 2 o
+ 4 o o
 
- o o o o o
+elat
+ o 4 1
 
- o o o o o
+ 3 2 o
 
-lure
- o o o o o
+ o o o
 
- o o 1 o 4
+elba
+ 3 o 1
 
- o o o 2 3
+ 4 2 o
 
- o o o o o
+ o o o
 
- o o o o o
+elda
+ o o 1
 
-olla
- o 4 o o o
+ 4 2 o
 
- o o 3 o o
+ 3 o o
 
- o 1 2 o o
+eldo
+ o o 1
 
- o o o o o
+ o 2 o
 
- o o o o o
+ 3 4 o
 
-resh
- o o o 3 4
+elod
+ o o 1
 
- o o o o 2
+ o 2 o
 
- o o o o 1
+ 4 3 o
 
- o o o o o
+etla
+ o 2 1
 
- o o o o o
+ 4 3 o
 
-rues
- o o o 4 o
+ o o o
 
- o o o o 3
+ioab
+ 4 o o
 
- o o o 2 1
+ 3 o 1
 
- o o o o o
+ o 2 o
 
- o o o o o
+iola
+ o o o
 
-ruly
- o o o o o
+ 4 3 1
 
- o o o o o
+ o 2 o
 
- o o 3 2 1
+iole
+ o o 4
 
- o o 4 o o
+ o 3 1
 
- o o o o o
+ o 2 o
 
-sial
- o 3 2 1 o
+ital
+ o 2 o
 
- o o 4 o o
+ 3 4 1
 
- o o o o o
+ o o o
 
- o o o o o
+itel
+ o 2 3
 
- o o o o o
+ o 4 1
 
-sill
- o o 2 1 o
+ o o o
 
- o o 3 o o
+late
+ o 3 4
 
- o o 4 o o
+ 2 1 o
 
- o o o o o
+ o o o
 
- o o o o o
+lati
+ o 3 o
 
-silo
- o o 2 1 o
+ 2 1 4
 
- o o 3 o o
+ o o o
 
- o 4 o o o
+leta
+ o 3 2
 
- o o o o o
+ 4 1 o
 
- o o o o o
+ o o o
 
-slot
- o o o 1 o
+liod
+ o o o
 
- o o 2 o o
+ o 1 2
 
- 4 3 o o o
+ 4 3 o
 
- o o o o o
+lita
+ o 3 o
 
- o o o o o
+ 4 1 2
 
-slub
- o o o 1 o
+ o o o
 
- o o 2 o o
+litb
+ 4 3 o
 
- o o o 3 o
+ o 1 2
 
- o o o o 4
+ o o o
 
- o o o o o
+lite
+ o 3 4
 
-slue
- o o o 1 o
+ o 1 2
 
- o o 2 o 4
+ o o o
 
- o o o 3 o
+load
+ o o o
 
- o o o o o
+ 3 1 o
 
- o o o o o
+ 4 2 o
 
-slur
- o o o 1 o
+loda
+ o o o
 
- o o 2 o o
+ 4 1 o
 
- o o o 3 4
+ 3 2 o
 
- o o o o o
+ltab
+ 4 2 o
 
- o o o o o
+ 3 1 o
 
-tidy
- o o o o o
+ o o o
 
- o o o o o
+odab
+ 4 o o
 
- 1 o o o o
+ 3 o o
 
- 2 o 4 o o
+ 2 1 o
 
- o 3 o o o
+odal
+ o o o
 
-tola
- o 4 o o o
+ 3 4 o
 
- o o 3 o o
+ 2 1 o
 
- 1 2 o o o
+oita
+ o 3 o
 
- o o o o o
+ 4 o 2
 
- o o o o o
+ o 1 o
 
-toll
- o o o o o
+olit
+ o 4 o
 
- o o 3 o o
+ o 2 3
 
- 1 2 4 o o
+ o 1 o
 
- o o o o o
+tald
+ o 1 o
 
- o o o o o
+ 2 3 o
 
-tolu
- o o o o o
+ 4 o o
 
- o o 3 o o
+tale
+ o 1 4
 
- 1 2 o 4 o
+ 2 3 o
 
- o o o o o
+ o o o
 
- o o o o o
+tali
+ o 1 o
 
-tool
- o o o o o
+ 2 3 4
 
- 2 o 4 o o
+ o o o
 
- 1 3 o o o
+teil
+ o 1 2
 
- o o o o o
+ o 4 3
 
- o o o o o
+ o o o
+
+tela
+ o 1 2
+
+ 4 3 o
+
+ o o o
+
+teli
+ o 1 2
+
+ o 3 4
+
+ o o o
+
+tila
+ o 1 o
+
+ 4 3 2
+
+ o o o
+
+tile
+ o 1 4
+
+ o 3 2
+
+ o o o
+
+viet
+ o 4 3
+
+ o o 2
+
+ o o 1
+
+vila
+ o o o
+
+ 4 3 2
+
+ o o 1
+
+vild
+ o o o
+
+ o 3 2
+
+ 4 o 1
+
+vile
+ o o 4
+
+ o 3 2
+
+ o o 1
+
+viol
+ o o o
+
+ o 4 2
+
+ o 3 1
+
+vita
+ o 3 o
+
+ 4 o 2
+
+ o o 1
+
+vite
+ o 3 4
+
+ o o 2
+
+ o o 1
+
+vlad
+ o o o
+
+ 3 2 o
+
+ 4 o 1
+
+vlba
+ 3 o o
+
+ 4 2 o
+
+ o o 1
+
+vlei
+ o o 3
+
+ o 2 4
+
+ o o 1
+
+vola
+ o o o
+
+ 4 3 o
+
+ o 2 1
+
+vole
+ o o 4
+
+ o 3 o
+
+ o 2 1
+
+volt
+ o 4 o
+
+ o 3 o
+
+ o 2 1
 
 
 Words of length: 5
-afoot
- 2 1 o o o
+ablet
+ 2 5 4
 
- 3 o o o o
+ 1 3 o
 
- 5 4 o o o
+ o o o
 
- o o o o o
+adlei
+ o o 4
 
- o o o o o
+ 1 3 5
 
-allot
- o 1 o o o
+ 2 o o
 
- o o 2 o o
+adlet
+ o 5 4
 
- 5 4 3 o o
+ 1 3 o
 
- o o o o o
+ 2 o o
 
- o o o o o
+aliet
+ o 5 4
 
-alloy
- o 1 o o o
+ 1 2 3
 
- o o 2 o o
+ o o o
 
- o 4 3 o o
+alite
+ o 4 5
 
- o o 5 o o
+ 1 2 3
 
- o o o o o
+ o o o
 
-aloof
- 5 1 o o o
+alvie
+ o o 5
 
- 4 o 2 o o
+ 1 2 4
 
- o 3 o o o
+ o o 3
 
- o o o o o
+atelo
+ o 2 3
 
- o o o o o
+ 1 4 o
 
-bulla
- o 5 o o o
+ o 5 o
 
- o o 4 o o
+atile
+ o 2 5
 
- o o 3 2 o
+ 1 4 3
 
- o o o o 1
+ o o o
 
- o o o o o
+balei
+ 1 o 4
 
-bulls
- o o o 5 o
+ 2 3 5
 
- o o 4 o o
+ o o o
 
- o o 3 2 o
+balti
+ 1 4 o
 
- o o o o 1
+ 2 3 5
 
- o o o o o
+ o o o
 
-bully
- o o o o o
+batel
+ 1 3 4
 
- o o 3 o o
+ 2 5 o
 
- o o 4 2 o
+ o o o
 
- o o 5 o 1
+blate
+ 1 4 5
 
- o o o o o
+ 3 2 o
 
-diols
- o o o 5 o
+ o o o
 
- o o 4 o o
+blite
+ 1 4 5
 
- o 3 o o o
+ o 2 3
 
- 2 o o o o
+ o o o
 
- o 1 o o o
+bloat
+ 1 5 o
 
-fails
- 1 2 3 5 o
+ 4 2 o
 
- o o 4 o o
+ o 3 o
 
- o o o o o
+datil
+ o 3 o
 
- o o o o o
+ 2 5 4
 
- o o o o o
+ 1 o o
 
-false
- 1 2 o 4 o
+eilat
+ o 5 1
 
- o o 3 o 5
+ 4 3 2
 
- o o o o o
+ o o o
 
- o o o o o
+elita
+ o 4 1
 
- o o o o o
+ 5 2 3
 
-foals
- 1 3 o 5 o
+ o o o
 
- 2 o 4 o o
+iodal
+ o o o
 
- o o o o o
+ 4 5 1
 
- o o o o o
+ 3 2 o
 
- o o o o o
+italo
+ o 2 o
 
-fools
- 1 o o 5 o
+ 3 4 1
 
- 2 o 4 o o
+ o 5 o
 
- o 3 o o o
+lovie
+ o o 5
 
- o o o o o
+ o 1 4
 
- o o o o o
+ o 2 3
 
-idiot
- o o o o o
+oleta
+ o 4 3
 
- o o o o o
+ 5 2 o
 
- 5 4 o o o
+ o 1 o
 
- 3 o o o o
+ovile
+ o o 5
 
- 1 2 o o o
+ o 4 3
 
-idyll
- o o o o o
+ o 1 2
 
- o o 5 o o
+table
+ 3 1 5
 
- o o 4 o o
+ 2 4 o
 
- 1 o 3 o o
+ o o o
 
- o 2 o o o
+talie
+ o 1 5
 
-loofa
- 4 5 o o o
+ 2 3 4
 
- 3 o 1 o o
+ o o o
 
- o 2 o o o
+talio
+ o 1 o
 
- o o o o o
+ 2 3 4
 
- o o o o o
+ o 5 o
 
-lures
- o o o 5 o
+teilo
+ o 1 2
 
- o o 1 o 4
+ o 4 3
 
- o o o 2 3
+ o 5 o
 
- o o o o o
+teloi
+ o 1 2
 
- o o o o o
+ o 3 5
 
-myoid
- o o o o o
+ o 4 o
 
- o o o o o
+tilda
+ o 1 o
 
- o 3 o o o
+ 5 3 2
 
- 4 o 2 o o
+ 4 o o
 
- o 5 o 1 o
+vieta
+ o 4 3
 
-ootid
- o o o o o
+ 5 o 2
 
- 1 o o o o
+ o o 1
 
- 3 2 o o o
+viola
+ o o o
 
- 4 o o o o
+ 5 4 2
 
- o 5 o o o
+ o 3 1
 
-silly
- o o 2 1 o
+viole
+ o o 5
 
- o o 3 o o
+ o 4 2
 
- o o 4 o o
+ o 3 1
 
- o o 5 o o
+vital
+ o 3 o
 
- o o o o o
+ 4 5 2
 
-sloid
- o o o 1 o
+ o o 1
 
- o o 2 o o
+voila
+ o o o
 
- o 3 o o o
+ 5 4 3
 
- 4 o o o o
+ o 2 1
 
- o 5 o o o
+voile
+ o o 5
 
-sloyd
- o o o 1 o
+ o 4 3
 
- o o 2 o o
+ o 2 1
 
- o 3 o o o
+volet
+ o 5 4
 
- o o 4 o o
+ o 3 o
 
- o 5 o o o
+ o 2 1
 
-slurb
- o o o 1 o
+volta
+ o 4 o
 
- o o 2 o o
+ 5 3 o
 
- o o o 3 4
+ o 2 1
 
- o o o o 5
+volte
+ o 4 5
 
- o o o o o
+ o 3 o
 
-tolls
- o o o 5 o
+ o 2 1
 
- o o 4 o o
+volti
+ o 4 o
 
- 1 2 3 o o
+ o 3 5
 
- o o o o o
-
- o o o o o
-
-tools
- o o o 5 o
-
- 2 o 4 o o
-
- 1 3 o o o
-
- o o o o o
-
- o o o o o
+ o 2 1
 
 
 Words of length: 6
-allure
- o 1 o o o
+alvite
+ o 5 6
 
- o o 2 o 6
+ 1 2 4
 
- o o 3 4 5
+ o o 3
 
- o o o o o
+baltei
+ 1 4 5
 
- o o o o o
+ 2 3 6
 
-brulot
- o o o o o
+ o o o
 
- o o 4 o o
+dablet
+ 3 6 5
 
- 6 5 o 3 2
+ 2 4 o
 
- o o o o 1
+ 1 o o
 
- o o o o o
+doable
+ 4 o 6
 
-falser
- 1 2 o 4 o
+ 3 5 o
 
- o o 3 o 5
+ 1 2 o
 
- o o o o 6
+dolite
+ o 5 6
 
- o o o o o
+ o 3 4
 
- o o o o o
+ 1 2 o
 
-idylls
- o o o 6 o
+elvita
+ o 5 1
 
- o o 5 o o
+ 6 2 4
 
- o o 4 o o
+ o o 3
 
- 1 o 3 o o
+iodate
+ o 5 6
 
- o 2 o o o
+ 4 o 1
 
-toluyl
- o o o o o
+ 3 2 o
 
- o o 3 o o
+leitao
+ o 4 2
 
- 1 2 6 4 o
+ 5 1 3
 
- o o 5 o o
+ o 6 o
 
- o o o o o
+violet
+ o 6 5
+
+ o 4 2
+
+ o 3 1
+
+vitale
+ o 3 6
+
+ 4 5 2
+
+ o o 1
+
+voleta
+ o 5 4
+
+ 6 3 o
+
+ o 2 1
 
 
 Words of length: 7
-allures
- o 1 o 7 o
+violate
+ o 6 7
 
- o o 2 o 6
+ 5 4 2
 
- o o 3 4 5
+ o 3 1
 
- o o o o o
+violeta
+ o 6 5
 
- o o o o o
+ 7 4 2
 
-bullish
- o o 5 6 7
-
- o o 4 o o
-
- o o 3 2 o
-
- o o o o 1
-
- o o o o o
-
-failure
- 1 2 3 o o
-
- o o 4 o 7
-
- o o o 5 6
-
- o o o o o
-
- o o o o o
-
-foolish
- 1 o 5 6 7
-
- 2 o 4 o o
-
- o 3 o o o
-
- o o o o o
-
- o o o o o
-
-sialoid
- o 3 2 1 o
-
- o o 4 o o
-
- o 5 o o o
-
- 6 o o o o
-
- o 7 o o o
-
-
-Words of length: 8
-failures
- 1 2 3 8 o
-
- o o 4 o 7
-
- o o o 5 6
-
- o o o o o
-
- o o o o o
-
-
-Words of length: 9
-foolisher
- 1 o 5 6 7
-
- 2 o 4 o 8
-
- o 3 o o 9
-
- o o o o o
-
- o o o o o
+ o 3 1
 
