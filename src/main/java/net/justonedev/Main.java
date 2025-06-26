@@ -52,6 +52,7 @@ public final class Main {
         Set<String> wordList = new HashSet<>(readFile(useAdvancedWordList ? largeWordlistFile : regularWordlistFile));
         char[][] squaredle = readFile("squaredle.txt").stream().map(String::toCharArray).toArray(char[][]::new);
         SquaredleSolver solver = new SquaredleSolver(wordList, squaredle, minWordLength, maxWordLength, bonusWordOfTheDay, typeKnownBonusWords, useAdvancedWordList);
+        System.out.println("Beginning...");
         var words = solver.solveWordleToFile();
         if (shouldType) {
             SquaredleTipper tipper = new SquaredleTipper(words);

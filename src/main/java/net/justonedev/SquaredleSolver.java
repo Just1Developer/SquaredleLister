@@ -16,13 +16,13 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 public final class SquaredleSolver {
-
     private final char[][] squaredle;
     private int minWordLength = 4;
     private int maxWordLength = 8;
@@ -33,16 +33,19 @@ public final class SquaredleSolver {
     private Coordinate[][] coordinateObjCache;
     private Map<Coordinate, Set<Coordinate>> coordinateNeighborCache;
 
+    private int maxWordLengthBruteforce;
+
     private final Set<String> wordList;
 
     public SquaredleSolver(Set<String> wordListRef, char[][] squaredleRef, int minWordLength, int maxWordLength, String bonusOfTheDay, boolean typeKnownBonusWords, boolean useAdvancedWordList) {
         this.wordList = wordListRef;
         this.squaredle = squaredleRef;
         this.minWordLength = minWordLength;
-        this.maxWordLength = maxWordLength;
         this.bonusOfTheDay = bonusOfTheDay;
         this.typeKnownBonusWords = typeKnownBonusWords;
         this.useAdvancedWordList = useAdvancedWordList;
+        maxWordLengthBruteforce = Math.max(7, 18 - squaredle.length); //Math.max(7, 12 - squaredle.length / 2);
+        this.maxWordLength = Math.min(maxWordLength, maxWordLengthBruteforce);
     }
 
     public Queue<Word> solveWordleToFile() {
@@ -117,18 +120,63 @@ public final class SquaredleSolver {
         //System.out.print(string);
     }
 
+    private Optional<Word> findWord(String _word) {
+        Queue<List<Coordinate>> paths = new LinkedList<>();
+        char[] word = _word.toCharArray();
+        // Find all start letters:
+        for (int y = 0; y < squaredle.length; y++) {
+            for (int x = 0; x < squaredle[y].length; x++) {
+                if (charAt(coord(x, y)) == word[0]) {
+                    var list = new ArrayList<Coordinate>();
+                    list.add(coord(x, y));
+                    paths.add(list);
+                }
+            }
+        }
+        return findWordRec(paths, word, 1);
+    }
+
+    private Optional<Word> findWordRec(Queue<List<Coordinate>> paths, char[] word, int currentLetterIndex) {
+        if (paths.isEmpty()) return Optional.empty();
+        if (currentLetterIndex >= word.length) {
+            return Optional.of(new Word(String.valueOf(word), paths.poll()));
+        }
+        for (int i = 0; i < paths.size(); i++) {
+            var path = paths.poll();
+            var last = path.getLast();
+            var neighbors = last.getAllAdjacent(path);
+            for (var neighbor : neighbors) {
+                if (charAt(neighbor) == word[currentLetterIndex]) {
+                    var newPath = new ArrayList<>(path);
+                    newPath.add(neighbor);
+                    paths.offer(newPath);
+                }
+            }
+        }
+        return findWordRec(paths, word, currentLetterIndex + 1);
+    }
+
     private PriorityQueue<Word> findAllWords() {
         PriorityQueue<Word> allWords = new PriorityQueue<>(Comparator.comparing(word -> ((Word) word).word.length()).thenComparing(word -> ((Word) word).word));
         for (int length = minWordLength; length <= maxWordLength; length++) {
             print("Begin finding words of length: " + length);
+            System.out.println("Begin finding words of length: " + length);
             Set<Word> words = new HashSet<>();
             for (int y = 0; y < squaredle.length; y++) {
+                System.out.println("[Word Length " + length + "] Starting with row " + (y + 1));
                 for (int x = 0; x < squaredle[y].length; x++) {
                     words.addAll(findWords(x, y, length));
                 }
             }
             words.stream().distinct().forEach(allWords::offer);
             print("Finished finding words of length: " + length);
+        }
+        System.out.println("Starting finding all longer words...");
+        for (String word : wordList) {
+            if (word.length() > maxWordLength) {
+                var wordOpt = findWord(word);
+                wordOpt.ifPresent(allWords::add);
+            }
         }
         return allWords;
     }
