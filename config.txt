@@ -1,7 +1,15 @@
 min word length=4
-max word length=7
+max word length=12
+use smarter word finding=y
+
 type=y
 start delay=4000
 type delay=10
-bonus of the day=
+
 use advanced word list=n
+use advanced list only=y
+
+bonus of the day=tattie
+find bonus=n
+bonus length=6
+(alt) bonus regex=ta

@@ -20,6 +20,7 @@ import java.util.Optional;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Set;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public final class SquaredleSolver {
@@ -30,25 +31,41 @@ public final class SquaredleSolver {
     @SuppressWarnings("all")    // todo later
     private final boolean typeKnownBonusWords;
     private final boolean useAdvancedWordList;
+    private final boolean useSmarterWordFinding;
     private Coordinate[][] coordinateObjCache;
     private Map<Coordinate, Set<Coordinate>> coordinateNeighborCache;
+    @SuppressWarnings("all")
+    private final Optional<String> bonusWordPattern;
 
-    private int maxWordLengthBruteforce;
+    private final int maxWordLengthBruteforce;
 
     private final Set<String> wordList;
 
-    public SquaredleSolver(Set<String> wordListRef, char[][] squaredleRef, int minWordLength, int maxWordLength, String bonusOfTheDay, boolean typeKnownBonusWords, boolean useAdvancedWordList) {
+    public SquaredleSolver(
+            Set<String> wordListRef,
+            char[][] squaredleRef,
+            int minWordLength,
+            int maxWordLength,
+            String bonusOfTheDay,
+            boolean typeKnownBonusWords,
+            boolean useAdvancedWordList,
+            boolean useSmarterWordFinding,
+            String bonusWordPattern
+    ) {
         this.wordList = wordListRef;
         this.squaredle = squaredleRef;
         this.minWordLength = minWordLength;
         this.bonusOfTheDay = bonusOfTheDay;
         this.typeKnownBonusWords = typeKnownBonusWords;
         this.useAdvancedWordList = useAdvancedWordList;
+        this.useSmarterWordFinding = useSmarterWordFinding;
         maxWordLengthBruteforce = Math.max(7, 18 - squaredle.length); //Math.max(7, 12 - squaredle.length / 2);
-        this.maxWordLength = Math.min(maxWordLength, maxWordLengthBruteforce);
+        this.maxWordLength = useSmarterWordFinding ? Math.min(maxWordLength, maxWordLengthBruteforce) : maxWordLength;
+        this.bonusWordPattern = bonusWordPattern == null ? Optional.empty() : Optional.of(bonusWordPattern);
+        init();
     }
 
-    public Queue<Word> solveWordleToFile() {
+    private void init() {
         coordinateNeighborCache = new HashMap<>();
         coordinateObjCache = new Coordinate[squaredle.length][squaredle[0].length];
         for (int y = 0; y < squaredle.length; y++) {
@@ -64,7 +81,9 @@ public final class SquaredleSolver {
                 coordinateNeighborCache.put(c, c.getAllAdjacent());
             }
         }
+    }
 
+    public Queue<Word> solveWordleToFile() {
         var words = findAllWords();
         Queue<Word> wordList = new LinkedList<>();
 
@@ -74,12 +93,22 @@ public final class SquaredleSolver {
         printMap(squaredle);
         printf("Using %s word list.%n", useAdvancedWordList ? "advanced" : "regular");
         printf("%nFound %d words.%n", words.size());
+
+        Pattern pattern = bonusWordPattern.map(Pattern::compile).orElse(null);
+
         while (!words.isEmpty()) {
             var found = words.poll();
-            if (!found.word.equals(bonusOfTheDay)) {
+            var word = found.word;
+            if (pattern != null && word.startsWith("ta")) {
+                System.out.println("Word " + word + " matches pattern " + pattern + " --> " + pattern.matcher(word).matches());
+            }
+            if (bonusWordPattern.isPresent() && !pattern.matcher(word).matches()) {
+                // Looking for bonus word
+                continue;
+            }
+            if (!word.equals(bonusOfTheDay)) {
                 wordList.offer(found);
             }
-            var word = found.word;
             var path = found.path;
             if (word.length() > currentLength) {
                 currentLength = word.length();
@@ -141,8 +170,10 @@ public final class SquaredleSolver {
         if (currentLetterIndex >= word.length) {
             return Optional.of(new Word(String.valueOf(word), paths.poll()));
         }
-        for (int i = 0; i < paths.size(); i++) {
+        final int previousPathCount = paths.size();
+        for (int i = 0; i < previousPathCount; i++) {
             var path = paths.poll();
+            assert path != null;
             var last = path.getLast();
             var neighbors = last.getAllAdjacent(path);
             for (var neighbor : neighbors) {
@@ -171,12 +202,16 @@ public final class SquaredleSolver {
             words.stream().distinct().forEach(allWords::offer);
             print("Finished finding words of length: " + length);
         }
-        System.out.println("Starting finding all longer words...");
-        for (String word : wordList) {
-            if (word.length() > maxWordLength) {
-                var wordOpt = findWord(word);
-                wordOpt.ifPresent(allWords::add);
+        if (useSmarterWordFinding) {
+            System.out.println("Starting finding all longer words...");
+            int wordsClassicFound = allWords.size();
+            for (String word : wordList) {
+                if (word.length() > maxWordLength) {
+                    var wordOpt = findWord(word);
+                    wordOpt.ifPresent(allWords::add);
+                }
             }
+            printf("Found %d additional words%n", allWords.size() - wordsClassicFound);
         }
         return allWords;
     }

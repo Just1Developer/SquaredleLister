@@ -38,6 +38,11 @@ public final class Main {
     private static String bonusWordOfTheDay;
     private static boolean typeKnownBonusWords;
     private static boolean useAdvancedWordList;
+    private static boolean useAdvancedWordListOnly;
+    private static boolean useSmarterWordFinding;
+    private static boolean goFindBonusWordOnly;
+    private static String bonusWordSearchRegex;
+    private static int bonusLength;
 
     private static final Pattern parseableNumberRegex = Pattern.compile("\\d{1,5}");
     private static final String BOOLEAN_REGEX = "true|y(es)?";
@@ -49,9 +54,39 @@ public final class Main {
 
     public static void main(String[] args) {
         readConfig();
-        Set<String> wordList = new HashSet<>(readFile(useAdvancedWordList ? largeWordlistFile : regularWordlistFile));
+        Set<String> regularWords = new HashSet<>(readFile(regularWordlistFile));
+        Set<String> wordList = new HashSet<>(regularWords);
+        if (useAdvancedWordList) {
+            wordList.addAll(readFile(largeWordlistFile));
+        }
+        if (useAdvancedWordListOnly) {
+            wordList.removeAll(regularWords);
+        }
+        if (goFindBonusWordOnly) {
+            if (bonusWordSearchRegex.isBlank()) {
+                bonusWordSearchRegex = "^.{%d}$".formatted(bonusLength);
+            } else if (bonusLength >= 4) {
+                bonusWordSearchRegex = "^(?=.{%d}$)%s%s".formatted(bonusLength, bonusWordSearchRegex, ".".repeat(bonusLength - bonusWordSearchRegex.length()));
+            } else {
+                bonusWordSearchRegex = "^%s$".formatted(bonusWordSearchRegex);
+            }
+            minWordLength = bonusLength;
+            maxWordLength = bonusLength;
+        } else {
+            bonusWordSearchRegex = null;
+        }
         char[][] squaredle = readFile("squaredle.txt").stream().map(String::toCharArray).toArray(char[][]::new);
-        SquaredleSolver solver = new SquaredleSolver(wordList, squaredle, minWordLength, maxWordLength, bonusWordOfTheDay, typeKnownBonusWords, useAdvancedWordList);
+        SquaredleSolver solver = new SquaredleSolver(
+                wordList,
+                squaredle,
+                minWordLength,
+                maxWordLength,
+                bonusWordOfTheDay,
+                typeKnownBonusWords,
+                useAdvancedWordList,
+                useSmarterWordFinding,
+                bonusWordSearchRegex
+        );
         System.out.println("Beginning...");
         var words = solver.solveWordleToFile();
         if (shouldType) {
@@ -97,14 +132,33 @@ public final class Main {
                     }
                 }
             } else if (key.contains("bonus")) {
-                if (key.contains("day")) {
+                if (key.contains("find")) {
+                    goFindBonusWordOnly = value.matches(BOOLEAN_REGEX);
+                } else if (key.contains("length")) {
+                    if (parseableNumberRegex.matcher(value).matches()) {
+                        bonusLength = Integer.parseInt(value);
+                    } else if (goFindBonusWordOnly) {
+                        System.err.println("Failed to parse number bonus length from config!");
+                    }
+                } else if (key.contains("pattern") || key.contains("regex")) {
+                    bonusWordSearchRegex = value;
+                } else if (key.contains("day")) {
                     bonusWordOfTheDay = value;
                 } else {
                     typeKnownBonusWords = value.matches(BOOLEAN_REGEX);
                 }
             } else if (key.contains("use")) {
                 if (key.contains("advanced") && (key.contains("words") || key.contains("list"))) {
-                    useAdvancedWordList = value.matches(BOOLEAN_REGEX);
+                    if (key.contains("only")) {
+                        if (value.matches(BOOLEAN_REGEX)) {
+                            useAdvancedWordList = true;
+                            useAdvancedWordListOnly = true;
+                        }
+                    } else {
+                        useAdvancedWordList = value.matches(BOOLEAN_REGEX);
+                    }
+                } else if (key.contains("smarter") && key.contains("finding")) {
+                    useSmarterWordFinding = value.matches(BOOLEAN_REGEX);
                 }
             }
         }
