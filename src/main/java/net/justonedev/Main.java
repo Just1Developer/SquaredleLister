@@ -95,6 +95,14 @@ public final class Main {
         }
     }
 
+    public static Set<String> getRegularWordListSet() {
+        return new HashSet<>(readFile(regularWordlistFile));
+    }
+
+    public static List<String> getRegularWordList() {
+        return readFile(regularWordlistFile);
+    }
+
     private static void readConfig() {
         List<String[]> cfg = readFile("config.txt").stream().map(s -> s.split("=")).toList();
         for (String[] setting : cfg) {
